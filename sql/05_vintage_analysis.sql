@@ -1,0 +1,8 @@
+-- Vintage analysis will be completed after we map the application
+-- decision date from the selected source columns.
+--
+-- Target output:
+-- origination_month | applications | defaults | default_rate_pct
+--
+-- We will add this after the initial data load so the date logic is
+-- validated against the actual dataset.

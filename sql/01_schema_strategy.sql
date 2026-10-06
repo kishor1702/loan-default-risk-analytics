@@ -1,0 +1,32 @@
+-- 01_schema_strategy.sql
+-- Loan Default Risk Analytics
+--
+-- IMPORTANT:
+-- The portfolio plan requires a normalized schema, but the exact CSV column
+-- mapping must be confirmed from the downloaded dataset before production
+-- tables are finalized.
+--
+-- Phase 1 strategy:
+--   RAW CSV
+--      ↓
+--   staging tables
+--      ↓
+--   data-quality checks
+--      ↓
+--   normalized analytical tables
+--
+-- Do NOT guess source columns. The Python profiling script will produce:
+-- reports/data_profile/*_profile.csv
+--
+-- After profiling, map the actual source columns into:
+--   1. customer
+--   2. loan_application
+--   3. bureau_credit
+--   4. previous_application
+--   5. installments/payments if needed
+--
+-- Target business definition from the portfolio plan:
+-- TARGET = default flag in the selected Home Credit source.
+--
+-- We will document the exact target definition and every assumption in README
+-- before modeling.

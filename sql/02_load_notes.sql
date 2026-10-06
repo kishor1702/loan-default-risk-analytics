@@ -1,0 +1,16 @@
+-- Loading notes
+-- The raw Home Credit files contain many columns. We will explicitly select
+-- the required columns instead of blindly loading every column.
+--
+-- Recommended workflow:
+-- 1. Load CSVs into staging tables.
+-- 2. Validate row counts and data types.
+-- 3. Insert transformed fields into credit_risk tables.
+-- 4. Run data-quality checks.
+--
+-- For Windows PostgreSQL, COPY may require the PostgreSQL server to access
+-- the file path. If that is inconvenient, use psql \copy from the client.
+--
+-- Example:
+-- \copy staging.application_train FROM 'C:/path/application_train.csv'
+-- WITH (FORMAT csv, HEADER true, NULL '');

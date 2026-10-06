@@ -1,0 +1,12 @@
+-- Risk segmentation
+-- This script will combine application-level risk indicators and
+-- aggregated bureau/history features after those features are validated.
+--
+-- Planned dimensions:
+-- 1. Income band
+-- 2. Credit-to-income band
+-- 3. External credit score bands
+-- 4. Previous credit history
+-- 5. Occupation / income type
+--
+-- Final output will rank segments by default rate AND exposure.
