@@ -37,5 +37,5 @@ SQL • Python • Power BI • Statistics • Predictive Analytics
 
 ## Connect
 
-- LinkedIn: [Add your LinkedIn URL]
-- Email: [Add your preferred public email]
+- LinkedIn: https://www.linkedin.com/in/kishor-kumar-s-68b087245
+- Email: kishorsk1702@gmail.com
